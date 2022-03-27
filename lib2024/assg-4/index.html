@@ -3,50 +3,81 @@
 <head>
 	<meta charset="utf-8">
 	<title>Assignment 4 - CSS</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<style type="text/css">
+	<link rel="stylesheet" type="text/css" href="...style/style.css">
 </head>
 <body>
-main {
-		background: url("img/main-bg.png");
-	}
 
-	header {
-	 background: lightgreen;
-	 padding: 100px;
-	}
+	<div id="container" class="container">
+		<!-- header start -->
+		<header class="site-header">
+			<img src="img/logo.png" class="logo" alt="Kitten website logo">
+			<h1>Title of Page</h1>
+		<style>
+			header {background-color: lightgreen;}
+		</style>
+			<nav class="nav">
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="work.html">Work</a>
+			</nav>
+		</header>
+		<!-- header end -->
 
-	footer {
-		background: lightgreen;
-	   padding: 50px;
-	}
+		<!-- main content start -->
+		<main id="main" class="main">
+			<div id="content">
+				<div style="margin-right:50%;float:right">
+				<h2 class="sub-head">Main Content Title</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem tempor, rutrum est eget, auctor mi. Maecenas pharetra euismod commodo. Duis lacinia semper mi non interdum. Cras accumsan laoreet libero sit amet malesuada. Integer rhoncus quam id nulla facilisis, a pharetra sem sagittis. Sed sit amet efficitur velit, eu volutpat velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus in blandit ante. Proin rutrum volutpat sem at tempor. Sed porta volutpat ornare. Etiam eget sodales velit, vitae imperdiet mauris. Vestibulum vestibulum orci nec nulla molestie molestie. Cras non dapibus lacus. Integer consequat lectus eget pharetra facilisis. Morbi dapibus consequat sodales.
+				</p>
+	
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem tempor, rutrum est eget, auctor mi. Maecenas pharetra euismod commodo. Duis lacinia semper mi non interdum. Cras accumsan laoreet libero sit amet malesuada. Integer rhoncus quam id nulla facilisis, a pharetra sem sagittis. Sed sit amet efficitur velit, eu volutpat velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus in blandit ante. Proin rutrum volutpat sem at tempor. Sed porta volutpat ornare. Etiam eget sodales velit, vitae imperdiet mauris. Vestibulum vestibulum orci nec nulla molestie molestie. Cras non dapibus lacus. Integer consequat lectus eget pharetra facilisis. Morbi dapibus consequat sodales.
+				</p>
+			</div>
+		<!-- main content end-->
 
-	.container {
-	  max-width: 960px;
-	  margin: 0 auto;
-	}
+		<!-- sidebar start -->
+		<div id="sidebar">
+		<div>
+			<div style="margin-left:60%">
+			<img src="img/kitten.jpg" alt="kitten" style="width:100%">
+			<h3>Title of the Sidebar</h3>
+			<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem tempor, rutrum est eget, auctor mi. Maecenas pharetra euismod commodo. Duis lacinia semper mi non interdum. Cras accumsan laoreet libero sit amet malesuada. Integer rhoncus quam id nulla facilisis, a pharetra sem sagittis. Sed sit amet efficitur velit, eu volutpat velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus in blandit ante. Proin rutrum volutpat sem at tempor. Sed porta volutpat ornare. Etiam eget sodales velit, vitae imperdiet mauris. Vestibulum vestibulum orci nec nulla molestie molestie. Cras non dapibus lacus. Integer consequat lectus eget pharetra facilisis. Morbi dapibus consequat sodales.
+			</p>
+			</style>
+		</div>
+		<!-- sidebar end -->
 
-	img {
-		width: 33%;
-	}
+		<!-- secondary content start -->
+		<section class="some-kittens">
+			<h3>Secondary Content Title</h3>
+				<figure>
+					<img src="img/kitten.jpg" alt="kitten">
+					<figcaption>Image 1</figcaption>
+					<img src="img/kitten.jpg" alt="kitten">
+					<figcaption>Image 2</figcaption>
+					<img src="img/kitten.jpg" alt="kitten">
+					<figcaption>Image 3</figcaption>
+				</figure>
+		</section>
+		<!-- secondary content end -->
 
-</style>	
-</head>
-<body>
-<header>
-	<div class="container">
-		<span style= "font-family:Arial"><h1>Title Of Page</h1></span>
-	</div>
-</header>
-<main style="height: 1000px; margin:0 auto">
-	<div class="container">
-		<span style= "font-family:Arial">Main Content Title</span>
-	</div>
-</main>
-<footer>
-	<div class="container">
-		<span style= "font-family:Arial">Footer Content</span>
-	</div>
-</footer>
-</body>
-</html>
+		<!-- footer start -->
+		<footer class="site-footer">
+			<style>
+				footer {background: lightgreen;padding: 10px;}
+			</style>
+			<div class="container">
+			<div style="margin-left">
+				<p>Copyright &copy; 2017, All Rights Reserved</p>
+			<section>
+				<div style="margin-left:80%">
+				<img src="img/facebook.png"><img src="img/youtube.png"><img src="img/twitter.png">
+			</section>
+			</div>
+		</footer>
+		<!-- footer end -->

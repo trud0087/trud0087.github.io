@@ -50,9 +50,6 @@ table {
 img{
 	width: 100%;
 }
-h3 {text-align: left;
-}
-
 .clearfix:after {
 	content: "";
 	display: table;
@@ -63,68 +60,53 @@ h3 {text-align: left;
 	width: 100px;
 	position: left;
 }
-
 .container{
-	background: lightgreen;
-	max-width: 960px;
-	margin: 0;
+	background:#1976D2 ;
 }
 
 .kitten-gally{
 	width: 33%;
 	float: left;
 	box-sizing: border-box;
-	padding: 30px;
-}
+	padding: 20px;
 
+}
 .nav li a {
 	background-color: lightgreen;
 	display: block;
-	padding: 20px;
+	padding: 10px;
+	border: 3px solid black;
 }
-
 .nav li {
 	float: left;
 	padding:5%;
 	width: 50%;
-}
-
-.content {
-	background: white;
-	padding: 15px;
-	width:100%;
 	box-sizing: border-box;
 }
 
-.sidebar {
-	background: white;
-	padding: 15px;
-	width: 100%;
+.col-main, .col-footer, img {
+	width:100%;
 }
-
-.wrapperdiv {
-	float:left
-}	
 
 /*Header styles*/ 
-site-header {
-  	padding: 100px;
-  	text-align: center;
- 	background: lightgreen;
-  	margin:0;
+.header {
+  padding: 60px;
+  text-align: center;
+  background: lightgreen;
 }
 
-.div {
-  	padding: 100px;
-  	text-align: left;
-  	background: white;
-  	margin:10;
+/*Main content styles*/
+.site-sidebar {
+	background: #1976D2;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 /*footer styles*/
-.site-footer {
-		width: 30%;
-		box-sizing: border-box;
-		margin: 0;
-		padding: 10px;
-	}
+footer {
+	background: lightgreen;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
