@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Assignment 4 - CSS</title>
-	<link rel="stylesheet" type="text/css" href="...style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
 
@@ -12,72 +12,104 @@
 		<header class="site-header">
 			<img src="img/logo.png" class="logo" alt="Kitten website logo">
 			<h1>Title of Page</h1>
-		<style>
-			header {background-color: lightgreen;}
-		</style>
 			<nav class="nav">
-				<a href="home.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="contact.html">Contact</a>
-				<a href="work.html">Work</a>
+				<ul>
+					<li>
+						<a>Home</a>
+					</li>
+					<li>
+						<a>About</a>
+					</li>
+					<li>
+						<a>Contact</a>
+					</li>
+					<li>
+						<a>Work</a>
+					</li>
+				</ul>
 			</nav>
 		</header>
 		<!-- header end -->
 
 		<!-- main content start -->
 		<main id="main" class="main">
-			<div id="content">
-				<div style="margin-right:50%;float:right">
+			<section class="content">
 				<h2 class="sub-head">Main Content Title</h2>
-				<p>
+				<p >
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem tempor, rutrum est eget, auctor mi. Maecenas pharetra euismod commodo. Duis lacinia semper mi non interdum. Cras accumsan laoreet libero sit amet malesuada. Integer rhoncus quam id nulla facilisis, a pharetra sem sagittis. Sed sit amet efficitur velit, eu volutpat velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus in blandit ante. Proin rutrum volutpat sem at tempor. Sed porta volutpat ornare. Etiam eget sodales velit, vitae imperdiet mauris. Vestibulum vestibulum orci nec nulla molestie molestie. Cras non dapibus lacus. Integer consequat lectus eget pharetra facilisis. Morbi dapibus consequat sodales.
 				</p>
 	
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem tempor, rutrum est eget, auctor mi. Maecenas pharetra euismod commodo. Duis lacinia semper mi non interdum. Cras accumsan laoreet libero sit amet malesuada. Integer rhoncus quam id nulla facilisis, a pharetra sem sagittis. Sed sit amet efficitur velit, eu volutpat velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus in blandit ante. Proin rutrum volutpat sem at tempor. Sed porta volutpat ornare. Etiam eget sodales velit, vitae imperdiet mauris. Vestibulum vestibulum orci nec nulla molestie molestie. Cras non dapibus lacus. Integer consequat lectus eget pharetra facilisis. Morbi dapibus consequat sodales.
 				</p>
-			</div>
-		<!-- main content end-->
+			</section>
+		<!-- main content end -->
 
 		<!-- sidebar start -->
-		<div id="sidebar">
-		<div>
-			<div style="margin-left:60%">
-			<img src="img/kitten.jpg" alt="kitten" style="width:100%">
-			<h3>Title of the Sidebar</h3>
-			<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem tempor, rutrum est eget, auctor mi. Maecenas pharetra euismod commodo. Duis lacinia semper mi non interdum. Cras accumsan laoreet libero sit amet malesuada. Integer rhoncus quam id nulla facilisis, a pharetra sem sagittis. Sed sit amet efficitur velit, eu volutpat velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus in blandit ante. Proin rutrum volutpat sem at tempor. Sed porta volutpat ornare. Etiam eget sodales velit, vitae imperdiet mauris. Vestibulum vestibulum orci nec nulla molestie molestie. Cras non dapibus lacus. Integer consequat lectus eget pharetra facilisis. Morbi dapibus consequat sodales.
-			</p>
-			</style>
-		</div>
+		<aside class="site-sidebar">
+			<section class="sidebar">
+				<img src="img/kitten.jpg" alt="kitten">
+				<h4 class="section-title">Title of the Sidebar</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem tempor, rutrum est eget, auctor mi. 
+					</p>
+			</section>
+		</aside>
 		<!-- sidebar end -->
 
 		<!-- secondary content start -->
-		<section class="some-kittens">
-			<h3>Secondary Content Title</h3>
-				<figure>
-					<img src="img/kitten.jpg" alt="kitten">
-					<figcaption>Image 1</figcaption>
-					<img src="img/kitten.jpg" alt="kitten">
-					<figcaption>Image 2</figcaption>
-					<img src="img/kitten.jpg" alt="kitten">
-					<figcaption>Image 3</figcaption>
-				</figure>
-		</section>
+			<section class="sec-content">
+				<h3>Secondary Content Title</h3>
+				<ul class="kitten-list">
+					<li class="kitten-gally">
+						<figure>
+							<img src="img/kitten.jpg" alt="kitten">
+							<figcaption>Image 1</figcaption>
+						</figure>
+					</li>
+					<li class="kitten-gally">
+						<figure>
+							<img src="img/kitten.jpg" alt="kitten">
+							<figcaption>Image 2</figcaption>
+						</figure>
+					</li>
+					<li class="kitten-gally">
+						<figure>
+							<img src="img/kitten.jpg" alt="kitten">
+							<figcaption>Image 3</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</section>
+		</main>
 		<!-- secondary content end -->
 
 		<!-- footer start -->
-		<footer class="site-footer">
-			<style>
-				footer {background: lightgreen;padding: 10px;}
-			</style>
-			<div class="container">
-			<div style="margin-left">
+		<footer class="footer" id="footer">
+		<div class="footer-container">
+			<section class="copyright">
 				<p>Copyright &copy; 2017, All Rights Reserved</p>
-			<section>
-				<div style="margin-left:80%">
-				<img src="img/facebook.png"><img src="img/youtube.png"><img src="img/twitter.png">
 			</section>
-			</div>
+
+			<section class="col-footer social-media">
+				<nav>
+					<ul class="social-list">
+					<li class="social-gally">
+						<li>
+							<img src="img/facebook.png" alt="Facebook">
+						</li>
+						<li>
+							<img src="img/youtube.png" alt="Youtube">
+						</li>
+						<li>
+							<img src="img/twitter.png" alt="Twitter">
+					</li>
+					</ul>
+				</nav>
+			</section>
+		</div>
 		</footer>
 		<!-- footer end -->
+	</div>
+</body>
+</html>

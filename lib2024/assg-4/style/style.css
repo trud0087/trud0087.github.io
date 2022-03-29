@@ -25,10 +25,12 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
@@ -47,66 +49,86 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-img{
+img {
 	width: 100%;
 }
+header {
+	 background: #7cc576;
+	 padding: 75px;
+}
+
 .clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-.logo{
+.logo {
 	width: 100px;
-	position: left;
-}
-.container{
-	background:#1976D2 ;
+	float: left;
 }
 
-.kitten-gally{
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	background-image: url("img/main-bg.png");
+}
+
+
+.kitten-gally {
 	width: 33%;
 	float: left;
 	box-sizing: border-box;
 	padding: 20px;
+}
 
-}
 .nav li a {
-	background-color: lightgreen;
+	background-color: #6dcff6;
 	display: block;
-	padding: 10px;
-	border: 3px solid black;
+	padding: 18px;
+	border: 10px solid #7cc576;
 }
+
 .nav li {
 	float: left;
-	padding:5%;
-	width: 50%;
+	padding: 0%;
+	width: 18%;
 	box-sizing: border-box;
 }
 
-.col-main, .col-footer, img {
-	width:100%;
+.content {
+	float: left;
+	width: 65%;
+	box-sizing: border-box;
+	margin: 10px;
 }
 
-/*Header styles*/ 
-.header {
-  padding: 60px;
-  text-align: center;
-  background: lightgreen;
-}
-
-/*Main content styles*/
-.site-sidebar {
-	background: #1976D2;
-	padding: 15px;
+.sec-content {
+	float: left;
 	width: 100%;
 	box-sizing: border-box;
 }
 
-/*footer styles*/
-footer {
-	background: lightgreen;
-	padding: 15px;
-	width: 100%;
+.sidebar {
+	float: right;
+	width: 30%;
 	box-sizing: border-box;
+	margin-top: 3%;
+}
+
+.social-media {
+	float: right;
+	width: 8%;
+	box-sizing: border-box;
+}
+
+.social-gally {
+	width: 20%;
+	float: right;
+	box-sizing: border-box;
+	padding: 0px;
+}
+
+.copyright {
+	float: left;
 }
