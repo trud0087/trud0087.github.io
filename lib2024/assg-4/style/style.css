@@ -30,9 +30,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 body {
-	line-height: 1;
+  	line-height: 1;
+  	background-image: url("../img/main-bg.png");
 }
 ol, ul {
 	list-style: none;
@@ -56,6 +56,9 @@ header {
 	 background: #7cc576;
 	 padding: 75px;
 }
+h3 {
+	margin-left: 10px;
+}
 
 .clearfix:after {
 	content: "";
@@ -63,23 +66,15 @@ header {
 	clear: both;
 }
 
-.logo {
-	width: 100px;
-	float: left;
-}
-
 .container {
 	max-width: 960px;
 	margin: 0 auto;
-	background-image: url("img/main-bg.png");
 }
 
-
-.kitten-gally {
-	width: 33%;
+/*Header styles*/ 
+.logo {
+	width: 100px;
 	float: left;
-	box-sizing: border-box;
-	padding: 20px;
 }
 
 .nav li a {
@@ -96,26 +91,40 @@ header {
 	box-sizing: border-box;
 }
 
+/*Main content styles*/
 .content {
 	float: left;
 	width: 65%;
 	box-sizing: border-box;
-	margin: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
+/*Secondary content styles*/
 .sec-content {
 	float: left;
 	width: 100%;
 	box-sizing: border-box;
 }
 
+.kitten-gally {
+	width: 33%;
+	float: left;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+/*Sidebar styles*/
 .sidebar {
 	float: right;
 	width: 30%;
 	box-sizing: border-box;
-	margin-top: 3%;
+	margin-top: 30px;
+	margin-right: 10px;
 }
 
+
+/*Footer styles*/
 .social-media {
 	float: right;
 	width: 8%;
@@ -129,6 +138,21 @@ header {
 	padding: 0px;
 }
 
-.copyright {
-	float: left;
+.col-footer {
+    margin: auto;
+  	width: 100%;
+  	background: #7cc576
+}
+
+.social-list {
+	padding: 5px;
+	display: flex;
+  	justify-content: right;
+}
+
+.social-gally img {
+  	max-width: 100%;
+  	list-style: none;
+  	display: block;
+	padding: 5px;
 }
