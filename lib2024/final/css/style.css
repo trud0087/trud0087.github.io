@@ -1,4 +1,4 @@
-@charset utf-8
+@charset "utf-8"
 /*http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -64,19 +64,19 @@ table {
 		MOBILE FIRST
 ************************/
 .col-main, .col-footer, img {
-	width:100%;
+	width: 100%;
 }
 
 /*Header styles*/
 .logo {
-	width:100%;
+	width: 100%;
 	padding: 30px;
 	box-sizing: border-box;
 }
 
 .logo-container {
 	background-color: white;
-	width:100%;
+	width: 100%;
 	max-width: 100%;
 	margin-top: -25px;
 	margin-bottom: -25px;
@@ -89,7 +89,7 @@ h1 {
   	font-weight: 900;
   	font-size: 35px;
   	color: #72a9ae;
-  	margin-left: 65px;
+  	margin-left: 60px;
 }
 
 header {
@@ -99,6 +99,7 @@ header {
 	max-width: 100%;
 	margin-left: -10px;
 	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .desktop-nav {
@@ -220,7 +221,7 @@ label {
 .sidebar-nav-container {
 	float: right;
 	box-sizing: border-box;
-	margin-top: 43px;
+	margin-top: 45px;
 	margin-right: 60px;
 	height: 232px;
 	width: 327px;
@@ -340,6 +341,7 @@ button:hover {
   	margin-left: -10px;
   	box-sizing: border-box;
   	margin-bottom: 60px;
+  	padding-right: 5px;
 }
 
 .quick-links {
@@ -356,7 +358,7 @@ quick-links {
 
 .follow-us {
 	text-align: center;
-	margin-top: -159px;
+	margin-top: -167px;
 }
 
 a, a:hover, a:focus, a:active {
@@ -367,8 +369,8 @@ a, a:hover, a:focus, a:active {
 .address {
 	text-align: right;
 	color: black;
-	margin-top: -115px;
-	margin-left: -170px;
+	margin-top: -119px;
+	margin-left: -140px;
 	color: white;
 }
 
